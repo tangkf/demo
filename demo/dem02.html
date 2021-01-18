@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    
+    </title>
+    
+    <style>
+    
+        .box1{
+            border: 2px solid; 
+/*            overflow: hidden*/
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .box2{
+/*            margin-top: 120px;*/
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            float: left
+        }
+        .box2:hover{
+            
+            box-shadow: inset 10px 10px 10px  rgba(0,0,0,.1)
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
